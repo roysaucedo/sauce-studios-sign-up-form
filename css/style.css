@@ -8,23 +8,49 @@ body {
     background-color: #F7F8F9;
     width: auto;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
 }
 
+h4 {
+    color: #8E8E8E;
+}
+
+.main-div {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    display: flex;
+    /* background-color: red; */
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.test>img {
+    width: 300px;
+}
+
+.iphone-div {
+    width: 50%;
+    height: 100px;
+    background-color: blue;
+}
+
+
 .card {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* flex-direction: column; */
+    display: block;
     background-color: white;
     width: 400px;
-    height: 55%;
+    min-width: 300px;
+    height: 500px;
     box-shadow: 0px 0px 20px 10px #dddddd;
-
+    margin: 0 40px;
 }
 
 .top-container {
@@ -58,10 +84,6 @@ input[type="password"], [type="email"] {
 
 .logo {
     width: 40%;
-}
-
-h4 {
-
 }
 
 .check-ctr {
@@ -98,8 +120,10 @@ input[type="submit"] {
     text-decoration: none;
     color: grey;
     font-size: 10px;
-
 }
+
+
+
 
 @media screen and (min-width: 500px) {
     .card {
