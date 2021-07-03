@@ -28,29 +28,31 @@ h4 {
     width: 50%;
     height: 100vh;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .test>img {
-    width: 300px;
+    height: 600px;
+    box-shadow: 0px 0px 20px 10px #dddddd;
 }
 
-.iphone-div {
+.card-ctr {
+    display: flex;
+    /* background-color: red; */
     width: 50%;
-    height: 100px;
-    background-color: blue;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
 }
-
 
 .card {
     display: block;
     background-color: white;
     width: 400px;
     min-width: 300px;
-    height: 500px;
+    height: 600px;
     box-shadow: 0px 0px 20px 10px #dddddd;
-    margin: 0 40px;
 }
 
 .top-container {
@@ -79,7 +81,7 @@ input[type="password"], [type="email"] {
 
 .content-container {
     margin: 40px;
-    width: 80%;
+    
 }
 
 .logo {
@@ -122,17 +124,34 @@ input[type="submit"] {
     font-size: 10px;
 }
 
+.fb-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30px;
+    background-color: #0096F6;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.fb-txt {
+    color: white;
+    font-size: 12px;
+}
+
 
 
 
 @media screen and (min-width: 500px) {
     .card {
-      height: 45%;
+
     }
   }
 
-  @media screen and (min-width: 750px) {
-    .card {
+  @media screen and (max-width: 1000px) {
+    .test {
+        display: none;
 
     }
   }
